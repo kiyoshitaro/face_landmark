@@ -13,8 +13,8 @@ import numpy as np
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
-url = './images/sample_data_2/'
-img = cv2.imread('2018-09-14-104330.jpg') 
+#url = '../images/sample_data_2/'
+img = cv2.imread('/home/kiyoshitaro/Pictures/result/2_1.jpg') 
 
 #img = imutils.resize(img, width=500)
 gray = cv2.cvtColor(img , cv2.COLOR_BGR2GRAY)

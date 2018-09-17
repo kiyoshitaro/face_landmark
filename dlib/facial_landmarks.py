@@ -26,14 +26,14 @@ predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 #image = cv2.imread(args["image"])
 
 #link = ./images/sample_data_2/*.jpg
-link = '../../../../Pictures/Data/*.jpg'
+link = '../../../../Pictures/Data/*.png'
 listurls = glob.glob(link)
 for url in listurls :
     image = cv2.imread(url)
     image = imutils.resize(image, width=500)
-    cv2.imwrite('after imutils.resize.jpg',image)
+#    cv2.imwrite('after imutils.resize.jpg',image)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    cv2.imwrite('after to gray.jpg', gray)
+#    cv2.imwrite('after to gray.jpg', gray)
     
     rects = detector(gray, 1)
     
