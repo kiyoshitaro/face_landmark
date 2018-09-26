@@ -15,7 +15,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 #url = '../images/sample_data_2/'
-img = cv2.imread('/home/kiyoshitaro/Desktop/code/facial-landmarks/images') 
+img = cv2.imread('../images/example_02.*',1) 
 
 #img = imutils.resize(img, width=500)
 gray = cv2.cvtColor(img , cv2.COLOR_BGR2GRAY)

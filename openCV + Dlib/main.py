@@ -26,7 +26,7 @@ predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 #image = cv2.imread(args["image"])
 
 #link = ./images/sample_data_2/*.jpg
-link = '/home/kiyoshitaro/Desktop/code/facial-landmarks/images'
+link = '../images/example_02.jpg'
 listurls = glob.glob(link)
 for url in listurls :
     image = cv2.imread(url)
